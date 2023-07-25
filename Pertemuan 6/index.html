@@ -1,0 +1,93 @@
+<script>
+    // 1. Mengubah string menjadi huruf besar
+    let nama = "kim lanisa";
+    // variabel nama diubah menjadi huruf besar
+    nama = nama.toUpperCase();
+
+    // console.log(nama);
+
+    // 2. Mengubah string menjadi huruf kecil
+    let namaV2 = "KiM LanIsA";
+    // variabel nama diubah menjadi huruf kecil
+    namaV2 = namaV2.toLowerCase();
+
+    // console.log(namaV2);
+
+    // 3. Mengubah string menjadi huruf besar di awal kalimat
+    let namaV3 = "kim lanisa";
+    // variabel nama diubah menjadi huruf besar di awal kalimat
+    namaV3 = namaV3.charAt(0).toUpperCase() + namaV3.slice(1);
+
+    // console.log(namaV3);
+
+    // mengubah string menjadi huruf besar di setiap awal kalimat
+    let name = "kim lanisa";
+    // variabel nama diubah menjadi huruf besar di setiap awal kalimat
+    name = name.split(" ").map((n) => n.charAt(0).toUpperCase() + n.slice(1)).join(" ");
+
+    // console.log(name);
+
+    // mengubah string menjadi huruf besar di setiap awal kalimat dengan cara lain
+    let nameV2 = "kim lanisa";
+    // variabel nama diubah menjadi huruf besar di setiap awal kalimat
+    nameV2 = nameV2.replace(/\b[a-z]/g, (n) => n.toUpperCase());
+
+    // console.log(nameV2);
+
+    // 4. Mengubah salah satu kata dalam string
+    let namaV4 = "kim lanisa";
+    // variabel nama diubah menjadi huruf besar di awal kalimat
+    namaV4 = namaV4.replace("kim", "Lee");
+
+    // console.log(namaV4);
+
+    // 5. Mengubah semua kata dalam string
+    let namaV5 = "kim lanisa";
+    // variabel nama diubah menjadi huruf besar di awal kalimat
+    namaV5 = namaV5.replaceAll()
+
+    // console.log(namaV5);
+
+    // 6. Menghapus spasi di awal dan akhir string
+    let namaV6 = "         kim lanisa   ";
+    // variabel nama diubah menjadi huruf besar di awal kalimat
+    namaV6 = namaV6.trim();
+
+    // console.log(namaV5);
+
+    // 7. Mengubah string menjadi array
+    let namaV7 = "kim lanisa cantik banget";
+    // Memisahkan string berdasarkan spasi
+    let namaV8 = namaV7.split(" ");
+
+    // console.log(namaV8);
+
+    // Delimiter = pemisah
+    let namaV9 = "kim lanisa cantik banget";
+    // Memisahkan string berdasarkan huruf a
+    let namaV10 = namaV9.split("a");
+
+    // console.log(namaV10);
+
+    // Menambahkan delimiter setiap , (koma)
+    let namaV11 = "kim, lanisa, cantik, banget";
+    // Memisahkan dengan delimiter koma dan spasi
+    let namaV12 = namaV11.split(", ");
+
+    // console.log(namaV12);
+
+    // 8. Mengambil kata tertentu dari string yang sudah diubah menjadi array
+    let namaV13 = "kim lanisa";
+    // Memisahkan string berdasarkan spasi
+    let namaV14 = namaV13.split(" ");
+
+    // Mengambil kata pertama dari array, ingat array selalu dimulai dari 0
+    // console.log(namaV14[0]);
+
+    
+
+    // Array
+
+    
+    
+</script>
